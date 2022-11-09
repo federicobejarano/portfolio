@@ -10,7 +10,7 @@ const images = [
 images.forEach((image, i) => {
 
   const imgDiv = document.createElement("div");
-  imgDiv.className = "thumbnail col-md-6";
+  imgDiv.className = "thumbnail col-sm-6";
   imgDiv.style.backgroundImage = "url(https://drive.google.com/uc?export=view&id=" + image;
 
   const gallery = document.querySelector("#gallery");
