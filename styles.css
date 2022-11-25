@@ -1,15 +1,17 @@
-#main-header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body header {
   background-color: #D8D8D8;
 }
 
-#main-header h3 {
+header h3 {
   color: #182747;
-}
-
-#gallery img {
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
+  font-size: 2rem;
+  padding: 0.5em;
 }
 
 .thumbnail {
