@@ -17,7 +17,7 @@ const images = [
 
 	{
 		name: "lobizon",
-		thumbnail: "1emFuiUFEpnLnrHavXR3-K0Fkhi9nCJvf",
+		thumbnail: "1GPA8fS-Ouxlmj4SIv6R9VDxC8P4aeIKj",
 		"hr image": "1csCCTxv3qhJuKGIzH4X62AGt0GiosaPf"
 	},
 	{
