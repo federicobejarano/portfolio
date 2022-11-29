@@ -47,10 +47,16 @@ const images = [
 	},
 ]
 
+
 images.forEach((image, i) => {
+	
   const { thumbnail: id } = image;
+
   const imgDiv = document.createElement("div");
-  imgDiv.style.backgroundImage = "url('https://drive.google.com/uc?export=view&id=" + id + "')";
-  const gallery = document.querySelector("#gallery");
-  gallery.appendChild(imgDiv);
+	imgDiv.className = "thumbnail";
+	imgDiv.style.backgroundImage = `url(https://drive.google.com/uc?export=view&id=${id})`;
+
+	const gallery = document.querySelector("#gallery");
+	gallery.appendChild(imgDiv);
+
 });
