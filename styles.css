@@ -35,10 +35,14 @@ nav {
 }
 
 nav a {
-  margin: 0 4px;
+  margin-right: 5px;
 }
 
 /***** GALLERY *****/
+
+#gallery {
+    margin: 35px
+}
 
 .thumbnail {
   background-color: black;
