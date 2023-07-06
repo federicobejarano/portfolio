@@ -1,57 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/***** HEADER *****/
-
-header {
-  background-color: #F3EFE0;
-  color: #434242;
-  display: flex;
-  font-family: "Inconsolata", sans-serif;
-  font-size: 1.5rem;
-  padding: 20px 30px;
-}
-
-header h2 {
-  font-weight: lighter;
-  margin-left: 5px;
-  margin-right: auto;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #434242;
-  font-size: 1.2rem;
-}
-
-nav {
-  margin: 0 10px;
-  padding-bottom: 0;
-  padding-top: 0.2em;
-}
-
-nav a {
-  margin-right: 5px;
-}
-
-/***** GALLERY *****/
-
-#gallery {
-    margin: 35px
-}
-
-.thumbnail {
-  background-color: black;
-  width: 250px;
-  height: 250px;
-  display: inline-block; /* makes it fit in like an <img> */
-  background-size: cover; /* or contain */
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0 0.15em;
-  padding: 0;
-}
+/* Añade una regla de estilo para el cuerpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Establece un ancho máximo para el encabezado */
+  header {
+    max-width: 100%;
+  }
+  
+  /* Añade reglas de estilo para el encabezado en dispositivos móviles */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h2 {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Añade reglas de estilo para la galería en dispositivos móviles */
+  @media (max-width: 600px) {
+    #gallery {
+      margin: 20px;
+    }
+  
+    .thumbnail {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
