@@ -49,14 +49,13 @@ const images = [
 
 
 images.forEach((image, i) => {
-	
   const { thumbnail: id } = image;
 
   const imgDiv = document.createElement("div");
-	imgDiv.className = "thumbnail";
-	imgDiv.style.backgroundImage = `url(https://drive.google.com/uc?export=view&id=${id})`;
+  imgDiv.className = "thumbnail";
+  imgDiv.style.backgroundImage = `url(${id})`;
 
-	const gallery = document.querySelector("#gallery");
-	gallery.appendChild(imgDiv);
-
+  const gallery = document.querySelector("#gallery");
+  gallery.appendChild(imgDiv);
 });
+
